@@ -1,0 +1,10 @@
+git pull: baixa (fetch) as alterações do repositório remoto e as mescla (merge) com o branch atual do repositório local.
+
+git status:exibe o estado atual do repositório, mostrando arquivos modificados, adicionados, excluídos e pendentes de commit, além de indicar o branch ativo
+
+git add . :adiciona todas as alterações (novos arquivos, modificações e exclusões) na área de staging, preparando-as para o próximo commit.
+Ponto (.) no git add . → Inclui todas as alterações no diretório atual e subdiretórios.
+
+git commit -m "Atualizacao": salva as alterações adicionadas ao staging na história do repositório, criando um novo commit com a mensagem "Atualizacao".
+
+git push:envia os commits do repositório local para o repositório remoto, atualizando o branch correspondente.
