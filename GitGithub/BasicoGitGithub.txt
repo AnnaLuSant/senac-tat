@@ -1,0 +1,22 @@
+ 1  poweroff
+    2  sudo
+    3  sudo apt
+    4  sudo apt update 
+    5  sudo apt upgrade 
+    6  sudo apt upgrade  --fix-mising
+    7  sudo apt upgrade  --fix-missing
+    8  sudo apt autoremove
+    9  sudo apt autoclean
+   10  sudo reboot
+   11  sudo apt install curl~
+   12  sudo apt install curl
+   13  sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+   14  echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+   15  sudo apt update
+   16  sudo apt install brave-browser
+   17  sudo apt install chromium
+   18  sudo apt install linux-oem-24.04d
+   19  sudo apt install linux-oem-24.04b
+   20  sodo reboot
+   21  sudo reboot
+   22  history
