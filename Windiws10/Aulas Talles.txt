@@ -1,0 +1,8 @@
+Aulas Talles
+
+O que aprendemos??
+
+As aulas do Talles apesar de curtas, aprendemos muitas coisa... como:
+   Criar maquinas virtuais: WindowsXP, Windows 7, Windows 8
+   Configurar essas maquinas 
+   E fazer elas compartilharem pastas entre si

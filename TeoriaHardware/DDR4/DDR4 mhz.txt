@@ -1,0 +1,10 @@
+As memórias DDR4 operam em uma faixa de frequências que variam de 2133 MHz a 5000 MHz ou mais, dependendo do modelo e do tipo. As frequências mais comuns no mercado são:
+
+2133 MHz a 2400 MHz: frequências mais baixas, comuns em sistemas de entrada.
+2666 MHz a 3200 MHz: bastante populares em configurações padrão e mais equilibradas.
+3600 MHz a 4000 MHz: frequentemente usadas por entusiastas e para overclocking.
+Acima de 4000 MHz: modelos de alto desempenho, usados principalmente para overclocking ou em configurações premium.
+A frequência da memória deve ser compatível com a placa-mãe e o processador, sendo que frequências mais altas podem exigir ajustes ou overclocking.
+
+
+

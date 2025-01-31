@@ -1,0 +1,24 @@
+Vantagens da DDR4
+
+Velocidade: Frequências mais altas (2133-4800 MHz).
+Eficiência: Consome menos energia (1.2V).
+Capacidade: Suporta módulos maiores (até 256 GB).
+Confiabilidade: Correção de erros (CRC) em sistemas críticos.
+Escalabilidade: Preparada para demandas futuras.
+
+Desvantagens da DDR4
+
+Custo: Mais cara que DDR3.
+Incompatibilidade: Não funciona em sistemas antigos.
+Latência: CAS maior, podendo afetar alguns usos.
+Uso básico: Diferença mínima para tarefas simples.
+Conclusão: Ideal para alto desempenho, mas o custo pode não compensar para usuários básicos.
+
+
+Um site falando sobre DDR4: https://www.tecmundo.com.br/memoria-ram/76135-ddr4-novas-memorias-fazer-diferenca-desempenho-pc.htm
+
+coloquem o site no final do trabalho
+
+
+
+

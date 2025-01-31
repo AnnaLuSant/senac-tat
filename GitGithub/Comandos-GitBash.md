@@ -8,4 +8,4 @@ git git commit -m "Atualizacao"
 
 git push
 
-git status
+git statusgit pull

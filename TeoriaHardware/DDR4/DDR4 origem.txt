@@ -1,0 +1,12 @@
+O DDR4 (Double Data Rate 4) é a quarta geração de memória RAM do tipo SDRAM (Synchronous Dynamic Random-Access Memory), usada em computadores, 
+laptops, servidores e outros dispositivos eletrônicos. Ela é uma das partes essenciais do sistema, 
+responsável por armazenar temporariamente dados que o processador precisa acessar rapidamente para executar tarefas.
+
+o DDR4 foi oficialmente anunciado pela JEDEC em setembro de 2012, com a especificação padrão publicada no mesmo ano.
+
+Primeiros Produtos no Mercado:
+Os primeiros módulos DDR4 chegaram ao mercado em 2014, inicialmente voltados para servidores e sistemas 
+de alto desempenho. Fabricantes como Samsung, SK Hynix, e Micron foram pioneiros na produção.
+
+Em resumo, o DDR4 nasceu como uma evolução natural do DDR3, desenvolvido pela JEDEC e implementado 
+por grandes fabricantes para atender à crescente demanda por mais desempenho e eficiência no mundo da computação.

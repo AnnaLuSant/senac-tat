@@ -1,0 +1,1 @@
+Em termos de diferenças tecnológicas, o DDR4 tem maiores velocidades, começando em 2133MHz, que é o maior valor alcançado pelo DDR3. Aumentos de velocidades planejadas podem ir bem além de 3200MHz.
