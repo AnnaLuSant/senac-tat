@@ -1,0 +1,3 @@
+cat -n
+cat -n
+cat -n head -n200 tail -n100
