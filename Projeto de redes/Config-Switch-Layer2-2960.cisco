@@ -1,0 +1,91 @@
+!Modo EXEC
+enable
+    !configurações de data e hora
+    clock set 14:35:00 28 April 2025
+    !Modo configurações globais
+    configure terminal
+        Nome do switch
+        hostname sw-01
+        !Segurança de senhas
+        service password-encryption
+        !Marcação de data e hora nos log
+        service timestamps log datetime msec
+        !Tamanho do log
+        logging buffered 4096
+        !Desligar O DNS
+        no ip domain-lookup
+        !Mensagem do dia (desafio: banner com imagem ASCII)
+        banner motd #AVISO: Acesso autorizado somente a funcionarios#   
+        !Segurança no enable 
+        enable secret 123@senac
+        !Criar ususarios e senhas
+        username senac secret 123@senac
+        username anna password 123@senac
+        username admin privilege 15 secret 123@senac 
+        !Sair de todos os niveis
+        end 
+    !Salvar as configurações 
+    copy running-config startup-config
+        !Desabilitar o CDP e LLDP
+        no cdp run
+        no lldp run
+        !Acessar a porta console
+        line console 0
+            !Autenticação local
+            login local 
+            !Autenticação da porta
+            password 123@senac
+            !Habilitar o sincronismo dos logs
+            logging synchronous 
+            !Tempo de inatividade 
+            exec-timeout 5 30
+            !Sair de todos os niveis 
+     !Salvar as configurações 
+    copy running-config startup-config
+
+CONFIGURAÇÃO DO SWITCH 2con
+!Modo EXEC
+enable
+    !configurações de data e hora
+    clock set 14:35:00 28 April 2025
+    !Modo configurações globais
+    configure terminal
+        Nome do switch
+        hostname sw-01
+        !Segurança de senhas
+        service password-encryption
+        !Marcação de data e hora nos log
+        service timestamps log datetime msec
+        !Tamanho do log
+        logging buffered 4096
+        !Desligar O DNS
+        no ip domain-lookup
+        !Mensagem do dia (desafio: banner com imagem ASCII)
+        banner motd #AVISO: Acesso autorizado somente a funcionarios#   
+        !Segurança no enable 
+        enable secret 123@senac
+        !Criar ususarios e senhas
+        username senac secret 123@senac
+        username anna password 123@senac
+        username admin privilege 15 secret 123@senac 
+        !Sair de todos os niveis
+        end 
+    !Salvar as configurações 
+    copy running-config startup-config
+        !Desabilitar o CDP e LLDP
+        no cdp run
+        no lldp run
+        !Acessar a porta console
+        line console 0
+            !Autenticação local
+            login local 
+            !Autenticação da porta
+            password 123@senac
+            !Habilitar o sincronismo dos logs
+            logging synchronous 
+            !Tempo de inatividade 
+            exec-timeout 5 30
+            !Sair de todos os niveis 
+     !Salvar as configurações 
+    copy running-config startup-config
+    
