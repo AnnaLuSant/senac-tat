@@ -1,0 +1,113 @@
+!Acessando o modo EXEC Privilegiado
+enable
+
+    !Configuração de Data/Hora Router
+    clock set 19:54:00 11 February 2025
+
+   !Acessando o modo de Configuração Global de comandos
+    configure terminal
+
+    !Configuração do nome do router
+    hostname rt-01
+
+    !Habilitando o serviço de criptografia de senhas do Tipo-7 Password 
+    service password-encryption
+
+    !Habilitando o serviço de marcação de Data/Hora detalhado nos Logs
+    service timestamps log datetime msec
+    service timestamps debug datetime msec
+
+    !Habilitando o tamanho do Buffer dos Logs na Memória RAM
+    logging buffered 4096 
+
+    !Desativando a resolução de nomes de domínio
+    no ip domain-lookup
+
+    !Configuração do Banner da mensagem do dia
+    banner motd #AVISO: acesso autorizado somente a funcionarios#
+    
+    !Habilitando o comprimento mínimo da criação das senhas do Tipo-5 ou Tipo-7
+    security passwords min-length 8
+
+    !Habilitando o uso senha do Tipo-5 Secret para acessar o modo EXEC Privilegiado
+    enable secret SUA_SENHA_SEGURA
+
+    !Criação dos usuários locais utilizando senhas do Tipo-5 ou Tipo-7 e privilégios diferenciados
+    username USUÁRIO_1 secret SUA_SENHA_SEGURA
+    username USUÁRIO_2 password SUA_SENHA_NÃO_SEGURA
+    username USUARIO_3 privilege 15 secret SUA_SENHA_SEGURA
+    
+    !Configuração do nome de domínio FQDN (Fully Qualified Domain Name)
+    ip domain-name SEU_DOMÍNIO.INTRA
+
+    !Criação da chave de criptografia e habilitando o serviço do SSH Server local
+    crypto key generate rsa general-keys modulus 1024
+
+    !Habilitando a versão 2 do serviço de SSH Server
+    ip ssh version 2
+
+    !Habilitando o tempo de inatividade para novas conexões do SSH Server
+    ip ssh time-out 60
+
+    !Habilitando o número máximo de tentativas de conexões simultâneas no SSH Server
+    ip ssh authentication-retries 2
+    
+    !Bloqueando tentativas de conexões simultâneas com falha de autenticação no Router
+    login block-for 120 attempts 2 within 60
+
+    !Desativando os Serviços de Descobertas de equipamentos na rede
+    no cdp run
+    no lldp run
+
+    !Acessando a linha console, porta padrão de acesso Out-of-Band (Fora da Banda)
+    line console 0
+
+      !Forçando fazer login local utilizando usuário e senha locais do switch
+      login local
+
+      !Habilitando senha de acesso do Tipo-7 Password
+      password SUA_SENHA_NÃO_SEGURA
+
+      !Sincronizando as mensagens de logs na tela
+      logging synchronous
+
+      !Habilitando o tempo de inatividade de uso do console
+      exec-timeout 5 30
+      
+      !Saindo da configuração da linha console
+      exit
+
+    !Acessando as linhas virtuais de acesso remoto do Router
+    line vty 0 4
+
+      !Forçando fazer login local utilizando usuário e senha locais do Router
+      login local
+
+      !Habilitando senha de acesso do Tipo-7 Password
+      password SUA_SENHA_NÃO_SEGURA
+
+      !Sincronizando as mensagens de logs na tela
+      logging synchronous
+
+      !Habilitando o tempo de inatividade de uso da linha virtual
+      exec-timeout 5 30
+
+      !Configuração do tipo de protocolo de transporte de entrada
+      transport input ssh
+
+      !Saindo de todos os níveis e voltando para o modo EXEC Privilegiado
+      end
+
+  !Salvando as configurações da memória RAM para a memória NVRAM
+  !OBSERVAÇÃO IMPORTANTE: deixar uma linha em branco no final do script para
+  !salvar automaticamente o script na hora da execução, fazendo a função de
+  !<Enter> no final do script.
+  write
+
+============================================
+
+enable 
+    !Configuração da Interface de Rede LAN
+    interface gigabitEthernet 0/0
+        !Descrição 
+        description 

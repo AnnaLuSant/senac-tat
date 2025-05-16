@@ -1,0 +1,12 @@
+enable  
+    confegura terminsl
+        !Habilitar o serviço de DSN
+        ip domain-lookup
+        !Configurar o dominio 
+        !ip domain-name senac.br 
+        !Configurar o servidor DNS 
+        ip name-server 192.168.1.1
+        !Configurar hosts locais
+        ip host google 192.168.1.1
+        end
+    

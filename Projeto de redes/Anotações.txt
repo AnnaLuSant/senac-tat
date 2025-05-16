@@ -1,0 +1,10 @@
+Cabling: O cara que faz o cabeamento (Furukewa FCP)
+----------------------------------------------------
+Level-1: Suporte (UC-1 até UC-4)
+Level-2: Network: Switch LAN
+		  Rounter WAN
+Level-3 Server.:Windows
+		GNU/Linux
+Level-4: Clound..: AWS, GC, Azure
+Level-5 Security: Firewall: 
+			Blue - Red
