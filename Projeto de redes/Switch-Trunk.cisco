@@ -1,0 +1,25 @@
+!Configurando os trunks (Toncos) de Switch 3650
+enable
+    configure terminal
+        interface range gigabitEthernet 1/0/1 - 9
+            description Interface de Trunk
+            switchport mode trunk
+            switchport nonegotiate
+            end
+write 
+
+!Vizualizando as configurações 
+show running-config
+show interface status 
+show ip interface
+show interface trunk
+
+!Configuracão do switch 2960 (Dois lados)
+enable
+    configure terminal
+        interface range gigabitEthernet 0/1 - 2, fastEtherne 0/23 - 24
+            description Interface de Trunk
+            switchport mode trunk
+            switchport nonegotiate
+            end
+write
